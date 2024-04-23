@@ -1,0 +1,43 @@
+Multiple choice questions
+
+1. A. 6.5
+
+2. A. First line: o
+Last line: oooooooooo
+
+3. D. Exit condition
+
+4. C. It prints a message to the console
+
+5. D. new_list = [ ]
+for course in courses:
+   if course.contains(“cfg”):
+      new_list.append(course)
+
+Code Evaluation
+
+1. def find_max(numbers):
+
+    max_num = numbers[0]  # Initialise max_num with the first element
+    for num in numbers:
+        if num > max_num:  # Check if current number is greater than max_num
+            max_num = num
+    return max_num
+
+# Convert the string "3, 7, 2, 9, 5" to a list of integers
+numbers = [int(x) for x in "3, 7, 2, 9, 5".split(",")]
+
+# Call the function to find the maximum number
+maximum = find_max(numbers)
+
+print("Maximum number is:", maximum)
+
+- The unnecessary if num in numbers check is removed.
+- The return statement is placed outside the loop to ensure all elements are considered before returning the maximum value.
+- The code converts the string "3, 7, 2, 9, 5" into a list of integers using a list comprehension before calling the find_max function.
+
+2. - implementing a docstring is good practice as it improves codes readability
+- to prevent future errors when an empty list is passed through a function consider adding "none" to indicate absence
+- a max function on python has the same use as a loop, this is good practice to add
+
+

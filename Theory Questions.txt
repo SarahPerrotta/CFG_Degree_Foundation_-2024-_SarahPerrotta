@@ -1,0 +1,68 @@
+Question 1.1 - A primary key is a unique identifier to each record table, a table can only have one primary key.
+this ensures no two rows have identical values in primary key columns which enhances data integrity within the single table.
+On the other hand, a foreign key establishes the relationship between tables by referencing the primary key of another table,
+helps connect data.
+
+Question 1.2 - The 'finally' block in Python exception handling ensures that certain code is executed regardless of if
+an exception occurs in the try block. The role is to guarantee execution under all circumstances no matter what.
+It's commonly used for critical cleanup tasks such as closing files, releasing database connections, and cleaning up
+temporary files to maintain program consistency despite exceptions.
+
+Question 1.3 - A commit in github tracks the users changes and captures modifications. A push function on github
+can be used to create repositories, this helps to share projects between users, to be used in collaboration.
+
+Question 1.4 - Both actions are used to explain a an absence value, however both actions have their own distinct meanings.
+Undefined states that the variable is declared but there is no assigned value. Null means means the variable has no value.
+
+Question 1.5 - Two types of APIs
+First, Weather API - Open Weather Map, this provides users with weather forecasts data from all around the globe
+specific data it offers; weather conditions, temperature and feel like temperature. Alongside predicted forecast for
+following days. Users can set desired location on the API to view weather.
+Secondly, Nasa Mars Rover Photos API - this API Provides access to images captured by NASA's Mars rovers (Curiosity,
+Opportunity, Spirit). This API allows developers to retrieve photos taken by the rovers on Mars, including information
+like: the location of the rover in Mars, date and time images were captured and the camera used to take the photo.
+Developers can use this data to showcase images in their gallery for educational purposes about the Martian landscape and
+its geological features.
+
+Question 1.6 - The Product Owner in Agile is a champion for the product vision, leading the backlog, guiding
+communication, ensuring the team has clear goals to build the most valuable features in order to maximise user
+satisfaction and promote business success.
+
+Question 1.7 - An inner join is a common action used in SQL, as it is used return only rows where there's a
+match between the tables based on the join condition.
+An Left Join Left will include all data from the left table, even if there's no match in the right table, filling in
+those gaps with null values.
+
+Question 1.8 - Within Python if data types are classed as mutable, the values can be modified after the object is created.
+This data type is useful if a collection of content needs modified. This can be seen in Python by using lists, as it allows
+for adding/removing or changing elements within a list.
+If the data type within Python is classed as immutable, this means the values annot be changed after the object has been
+created, unmodifiable. Immutable data types are desirable to ensure data integrity and to avoid accidental changes.
+For example; Strings ( "" or '' ): Once created, the characters cannot be changed directly.
+
+Question 1.9 - A synchronous function is more helpful for simple tasks that don't involve waiting for external resources
+such as basic data manipulation.Synchronous function has a blocking nature, while the code runs in a linear manner, the
+program waits for that function to complete its task, like fetching data from a server before continuing to the next line
+of code. Hence why this function is most helpful when used with simple tasks.
+On the other hand, asynchronous function does not block the main thread when running code and allows the program to execute
+other code while the asynchronous function runs in the background.
+
+Question 1.10 - Project approach: Agile software development in this methodology is implemented in short cycles with
+continuous feedback based on the changing requirements.
+Waterfall follows a more predetermined set of phases such as planning, design and testing. This means it is restricted
+for flexibility for later changes.
+
+Requirement Management: Agile promotes changes throughout and encourages user feedback in order to actively change and
+incorporate developments throughout.
+Waterfall requires all data gatherings to be upfront at the beginning, to be distinct and clear due to the limited changes
+allowed later.
+
+Testing and Feedback: Agile integrates testing throughout the development lifecycle, allowing for early detection and
+correction of issues.
+Waterfall software tends to conduct testing towards the end of development phase, issues flagged up during testing can
+be costly and time-consuming to fix due to the rigid structure.
+
+Customer Involvement: Agile promotes close collaboration with customers and stakeholders.
+Waterfall: Customer involvement is often limited to the initial requirements gathering and final acceptance testing phases.
+
+Essentially Agile software is more flexible to conduct changes compared to waterfall.

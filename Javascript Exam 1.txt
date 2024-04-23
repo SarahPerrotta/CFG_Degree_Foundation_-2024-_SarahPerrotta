@@ -1,0 +1,60 @@
+Multiple choice questions
+
+Question 1.
+B. variable x = 5
+
+Question 2.
+A. “number”
+
+Question 3.
+B. 20
+
+Question 4.
+C. Array.isArray(variable)
+
+Question 5.
+C. Checks if two values are equal in both type and value
+
+// Code Evaluation
+
+//Question 1
+
+// Corrected and Improved Code:
+
+const items = [
+  { name: 'Laptop', price: 1000 },
+  { name: 'Headphones', price: 200 },
+  { name: 'Mouse', price: 50 }
+];
+
+// Calculate subtotal using reduce() with arrow syntax function for conciseness
+const subtotal = items.reduce((acc, item) => acc + item.price, 0);
+
+const TAX_RATE = 0.1;
+const DISCOUNT = 0.2;
+
+// Calculate tax and discount
+const tax = subtotal * TAX_RATE;
+const discount = subtotal * DISCOUNT;
+
+// Calculate total cost with proper rounding (toFixed(2) for two decimal places to be more user friendly)
+const total = (subtotal + tax - discount).toFixed(2);
+
+console.log("Total cost: $" + total); // Corrected: Use of console.log for proper output
+
+// Question 2
+
+// to be more direct object destructing can be used instead of using item.price within the reduce callback
+const subtotal = items.reduce((acc, { price }) => acc + price, 0);
+
+// if the code was more complex, it is beneficial to practice separating functions to handle the discount calculations
+function calculateDiscount(subtotal, discountRate) {
+  return subtotal * discountRate;
+}
+
+const discount = calculateDiscount(subtotal, DISCOUNT);
+
+// Can include optional chaining which will add robustness by handling potential data structure issues. for this example:
+const subtotal = items.reduce((acc, item) => acc + (item?.price || 0), 0);
+
+
